@@ -30,6 +30,12 @@ For business inquiries, please submit the [NVIDIA research licensing form.](http
 
 ## **Setup**
 
+Read the following [Install Guide](https://github.com/beasmith152/Easy-Install-Neuralangelo-includes-updated-dependency-list-/blob/main/INSTALLGUIDE.md)
+
+## *Conda Setup* 
+
+If you are confused by the below; please read the above setup guide.
+
 The conda environment for Neuralangelo. Install the dependencies and activate the environment neuralangelo with
 
 ```
