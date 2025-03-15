@@ -112,3 +112,13 @@ After your installation of all dependencies and following the above instructions
 
 
 [dataset creation & training](https://github.com/beasmith152/Easy-Install-Neuralangelo-includes-updated-dependency-list-/blob/main/INSTALLGUIDE.md)
+
+---
+
+# **Helpful Tips for creating footage for datasets**
+
+---
+
+The video capture sequence may contain significant motion blur or out-of-focus frames. Higher shutter speed (reducing motion blur) and smaller aperture (increasing focus range) are very helpful.
+
+
