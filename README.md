@@ -28,11 +28,11 @@ For business inquiries, please submit the [NVIDIA research licensing form.](http
 
 ---
 
-## **2.Setup**
+# **2.Setup**
 
 Read the following [Install Guide](https://github.com/beasmith152/Easy-Install-Neuralangelo-includes-updated-dependency-list-/blob/main/INSTALLGUIDE.md)
 
-## *Conda Setup* 
+# *Conda Setup* 
 
 If you are confused by the below; please read the above setup guide.
 
@@ -46,7 +46,7 @@ conda env create --file neuralangelo.yaml
 conda activate neuralangelo
 }
 ```
-## **3.after you have ran neuralangelo.yaml file located above and activated the conda environment**
+# **3.after you have ran neuralangelo.yaml file located above and activated the conda environment**
 
 ---
 
@@ -90,7 +90,7 @@ sudo update-alternatives --config g++
 
 ---
 
-## **Install the following Pytorch libraries; This will work for building tinywheels**
+# **Install the following Pytorch libraries; This will work for building tinywheels**
 
 
 pip install torch==2.0.0+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
@@ -115,7 +115,7 @@ After your installation of all dependencies and following the above instructions
 
 ---
 
-# **Exporting the Mesh/Iso Surface Extraction**
+# **6.Exporting the Mesh/Iso Surface Extraction**
 
 ---
 
@@ -156,7 +156,7 @@ torchrun --nproc_per_node=${GPUS} projects/neuralangelo/scripts/extract_mesh.py 
 
 ---
 
-# **6.Helpful Tips for creating footage for datasets**
+# **7.Helpful Tips for creating footage for datasets**
 
 ---
 
