@@ -36,16 +36,18 @@
 
 16. cd (change directory) to neuralangelo
 
-17. open neuralangelo.yaml (The original YAML will not work, visit the custom YAML file on this repository and paste into the neuralangelo.yaml)
+17. open neuralangelo.yaml (The original YAML will not work, visit the [custom YAML file](https://github.com/beasmith152/Easy-Install-Neuralangelo-includes-updated-dependency-list-/blob/main/neuralangelo.yaml) on this repository and paste into the neuralangelo.yaml)
 
 18. type in: conda env create --neuralangelo.yaml
 
 19. copy and paste conda activate neurangelo (should change directory and machine from base to display neuralangelo)
 
-20. type export LIBRARY_PATH="/usr/lib/wsl/lib:$LIBRARY_PATH"
+20. Install the [dependencies](https://github.com/beasmith152/Easy-Install-Neuralangelo-includes-updated-dependency-list-/tree/main) as listed on the main page.
 
-21. type in pip install -r requirements.txt 
+21. type export LIBRARY_PATH="/usr/lib/wsl/lib:$LIBRARY_PATH"
 
-22. go to data preparation page in (github) in order to prepare your datasets.
+22. type in pip install -r requirements.txt 
 
-23. perform submodule updates
+23. go to data preparation page in (github) in order to prepare your datasets.
+
+24. perform submodule updates
