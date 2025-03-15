@@ -36,7 +36,9 @@ Read the following [Install Guide](https://github.com/beasmith152/Easy-Install-N
 
 If you are confused by the below; please read the above setup guide.
 
-The conda environment for Neuralangelo. Install the dependencies and activate the environment neuralangelo with
+The conda environment for Neuralangelo. Read the above guide and activate the environment neuralangelo with the below commands.
+
+**IMPORTANT (ensure you edit standard neuralangelo.yaml file with [updated](https://github.com/beasmith152/Easy-Install-Neuralangelo-includes-updated-dependency-list-/blob/main/neuralangelo.yaml) file) before running the below command**
 
 ```
 {
@@ -44,3 +46,57 @@ conda env create --file neuralangelo.yaml
 conda activate neuralangelo
 }
 ```
+## **after you have ran neuralangelo.yaml file located above and activated the conda environment**
+
+---
+
+### *install the dependencies and modify the preferences below:*
+
+
+### **install gcc/g++ through ubuntu toolchain**
+
+
+sudo add-apt-repository ppa:ubuntu-toolchain-r/ppa -y
+
+
+sudo apt install g++-11 gcc-11
+
+
+### **Switch Ubuntu's preferences from standard for g++/gcc**
+
+
+ls /usr/bin/gcc*
+
+
+ls /usr/bin/g++*
+
+
+### **then update the alternative**
+
+
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 100
+
+
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-11 100
+
+
+### **finish manually selecting alt gcc/g++**
+
+
+sudo update-alternatives --config gcc
+
+
+sudo update-alternatives --config g++
+
+---
+
+## **Install the following Pytorch libraries; This will work for building tinywheels**
+
+
+pip install torch==2.0.0+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
+
+
+pip install torchvision==0.15.0+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
+
+
+**After installing these dependencies you should be able to install the requirements.txt**
