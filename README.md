@@ -2,7 +2,7 @@
   
 # **Neuralangelo**
 
-#*Updated Install 2025*
+# **Updated Install 2025**
 ## Easy install guide with included dependencies "updated to work as of 2025"
 This repository provides an easy install for Neuralangelo, NVIDIA’s neural surface reconstruction framework. It updates dependencies for a seamless setup; Built for smooth deployment, ensuring high-fidelity 3D reconstruction with minimal hassle.
 ## *Original authors of Neuralangelo*
