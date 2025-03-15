@@ -77,7 +77,7 @@ When you run the last one you should get a viewpoint and can readjust parameters
 
 
 
-**6. YAML file changes**
+**6. [YAML file changes](https://github.com/beasmith152/Easy-Install-Neuralangelo-includes-updated-dependency-list-/blob/main/base.yaml)**
 
 
 After adjusting in the viewer; adjust the same parameters in neuralangelo/projects/configs then find the project **yourfilename.YAML** and input same changes there.
