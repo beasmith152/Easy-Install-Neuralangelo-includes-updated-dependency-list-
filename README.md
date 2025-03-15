@@ -108,4 +108,7 @@ pip install torchvision==0.15.0+cu117 --extra-index-url https://download.pytorch
 
 ---
 
+After your installation of all dependencies and following the above instructions you can now start training and creating custom datasets by following these instructions.
 
+
+[dataset creation & training](https://github.com/beasmith152/Easy-Install-Neuralangelo-includes-updated-dependency-list-/blob/main/INSTALLGUIDE.md)
