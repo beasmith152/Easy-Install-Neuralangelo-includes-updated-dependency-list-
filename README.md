@@ -111,7 +111,48 @@ pip install torchvision==0.15.0+cu117 --extra-index-url https://download.pytorch
 After your installation of all dependencies and following the above instructions you can now start training and creating custom datasets by following these instructions.
 
 
-[dataset creation & training](https://github.com/beasmith152/Easy-Install-Neuralangelo-includes-updated-dependency-list-/blob/main/INSTALLGUIDE.md)
+[dataset creation & training](https://github.com/beasmith152/Easy-Install-Neuralangelo-includes-updated-dependency-list-/blob/main/Dataset%20Creation%20%26%20Training%20Instructions.md)
+
+---
+
+# **Exporting the Mesh/Iso Surface Extraction**
+
+---
+
+[dataset creation & training](https://github.com/beasmith152/Easy-Install-Neuralangelo-includes-updated-dependency-list-/blob/main/Dataset%20Creation%20%26%20Training%20Instructions.md)
+
+**After Iteration is complete continue to ISO surface extraction**
+
+   
+**Some useful notes:**
+
+Add --textured to extract meshes with textures. (will take longer)
+Add --keep_lcc to remove noises. May also remove thin structures.
+Lower BLOCK_RES to reduce GPU memory usage.
+Lower RESOLUTION to reduce mesh size.
+
+**replace the names notated by xxx & input each command one by one**
+
+CHECKPOINT=logs/${GROUP}/${NAME}/xxx.pt
+OUTPUT_MESH=logs/${GROUP}/${NAME}/xxx.ply
+CONFIG=logs/${GROUP}/${NAME}/config.yaml
+RESOLUTION=2048
+BLOCK_RES=128
+GPUS=1  # use >1 for multi-GPU mesh extraction
+
+
+**enter command below all at once:**
+
+
+torchrun --nproc_per_node=${GPUS} projects/neuralangelo/scripts/extract_mesh.py \
+    --config=${CONFIG} \
+    --checkpoint=${CHECKPOINT} \
+    --output_file=${OUTPUT_MESH} \
+    --resolution=${RESOLUTION} \
+    --block_res=${BLOCK_RES} 
+    
+
+** check the checkpoint file; you will find the datasetname.ply file which is a 3d file exported to that location.**
 
 ---
 
