@@ -25,6 +25,7 @@ For business inquiries, please submit the [NVIDIA research licensing form.](http
 3. Install [Miniconda](https://docs.anaconda.com/miniconda/) and activate the dependencies on your WSL.
 4. Install [VSC](https://code.visualstudio.com/download)
 5. Update all your dependencies in WSL & Install git
+6. Clone the following repository: [Neuralangelo](https://github.com/NVlabs/neuralangelo)
 
 ---
 
