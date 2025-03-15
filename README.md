@@ -152,7 +152,7 @@ torchrun --nproc_per_node=${GPUS} projects/neuralangelo/scripts/extract_mesh.py 
     --block_res=${BLOCK_RES} 
     
 
-** check the checkpoint file; you will find the datasetname.ply file which is a 3d file exported to that location.**
+**check the checkpoint file; you will find the datasetname.ply file which is a 3d file exported to that location.**
 
 ---
 
