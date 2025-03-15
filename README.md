@@ -12,7 +12,7 @@ For business inquiries, please submit the [NVIDIA research licensing form.](http
 
 ---
 
-# **Installation**
+# **1.Installation**
 
 ## *Before installation, please read the requirements below*
 
@@ -28,7 +28,7 @@ For business inquiries, please submit the [NVIDIA research licensing form.](http
 
 ---
 
-## **Setup**
+## **2.Setup**
 
 Read the following [Install Guide](https://github.com/beasmith152/Easy-Install-Neuralangelo-includes-updated-dependency-list-/blob/main/INSTALLGUIDE.md)
 
@@ -46,7 +46,7 @@ conda env create --file neuralangelo.yaml
 conda activate neuralangelo
 }
 ```
-## **after you have ran neuralangelo.yaml file located above and activated the conda environment**
+## **3.after you have ran neuralangelo.yaml file located above and activated the conda environment**
 
 ---
 
@@ -100,11 +100,11 @@ pip install torchvision==0.15.0+cu117 --extra-index-url https://download.pytorch
 
 
 
-**After installing these dependencies you should be able to install the [requirements.txt](https://github.com/beasmith152/Easy-Install-Neuralangelo-includes-updated-dependency-list-/blob/main/requirements.txt)**
+**4.After installing these dependencies you should be able to install the [requirements.txt](https://github.com/beasmith152/Easy-Install-Neuralangelo-includes-updated-dependency-list-/blob/main/requirements.txt)**
 
 ---
 
-# **Dataset Creation & Training Instructions**
+# **5.Dataset Creation & Training Instructions**
 
 ---
 
@@ -115,7 +115,7 @@ After your installation of all dependencies and following the above instructions
 
 ---
 
-# **Helpful Tips for creating footage for datasets**
+# **6.Helpful Tips for creating footage for datasets**
 
 ---
 
