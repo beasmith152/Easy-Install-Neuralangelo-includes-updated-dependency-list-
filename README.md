@@ -121,4 +121,6 @@ After your installation of all dependencies and following the above instructions
 
 The video capture sequence may contain significant motion blur or out-of-focus frames. Higher shutter speed (reducing motion blur) and smaller aperture (increasing focus range) are very helpful.
 
+If you want the entire object you need to record from multiple angles without interuption, also try and control your lighting environment; it does not like bright white reflections and will attempt to render them as solid objects. 
+
 
