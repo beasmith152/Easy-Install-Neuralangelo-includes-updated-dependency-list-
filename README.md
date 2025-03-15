@@ -10,6 +10,10 @@ This repository provides an easy install for Neuralangelo, NVIDIA’s neural sur
 ## *Original authors of Neuralangelo*
 [Zhaoshuo Li](https://mli0603.github.io/), [Thomas Müller](https://tom94.net/), [Alex Evans](https://research.nvidia.com/person/alex-evans), [Russell H. Taylor](https://www.cs.jhu.edu/~rht/), [Mathias Unberath](https://mathiasunberath.github.io/), [Ming-Yu Liu](https://mingyuliu.net/), [Chen-Hsuan Lin](https://chenhsuanlin.bitbucket.io/)
 
+
+## *Link to the original [Neuralangelo](https://github.com/NVlabs/neuralangelo#)* 
+
+
 **The code is built upon the Imaginaire library from the Deep Imagination Research Group at NVIDIA.
 For business inquiries, please submit the [NVIDIA research licensing form.](https://www.nvidia.com/en-us/research/inquiries/)**
 </div>
