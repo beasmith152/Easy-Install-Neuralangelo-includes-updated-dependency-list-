@@ -1,0 +1,59 @@
+#Precursor steps
+  
+#install CUDA 11.7 on system/ not just the WSL subsystem.
+
+#then install these dependencies in the Conda ENV
+
+#(start of YAML file)
+
+# conda env create --file neuralangelo.yaml
+name: neuralangelo
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  # general
+  - gpustat
+  - gdown
+  - ninja
+  - cmake
+  - diskcache
+  - cudatoolkit-dev
+  # python general
+  - python=3.9
+  - pip
+  - numpy~=1.26.4
+  - scipy
+  - ipython
+  - jupyterlab
+  - cython
+  - gcc=11.5
+  - gxx=11.5
+  
+#(end of YAML file)
+
+After these dependencies are installed; then install the dependencies and modify the preferences below:
+
+#install gcc/g++ through ubuntu toolchain?
+
+sudo add-apt-repository ppa:ubuntu-toolchain-r/ppa -y
+
+sudo apt install g++-11 gcc-11
+
+Switching from standard
+ls /usr/bin/gcc*
+ls /usr/bin/g++*
+
+then update the alternative
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 100
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-11 100
+
+manually select alt
+sudo update-alternatives --config gcc
+sudo update-alternatives --config g++
+
+#works for building tiny wheels. Input after standard install.
+pip install torch==2.0.0+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
+pip install torchvision==0.15.0+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
+
+#After installing these dependencies you should be able to install the requirements.
