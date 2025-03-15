@@ -99,4 +99,13 @@ pip install torch==2.0.0+cu117 --extra-index-url https://download.pytorch.org/wh
 pip install torchvision==0.15.0+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
 
 
-**After installing these dependencies you should be able to install the requirements.txt**
+
+**After installing these dependencies you should be able to install the [requirements.txt](https://github.com/beasmith152/Easy-Install-Neuralangelo-includes-updated-dependency-list-/blob/main/requirements.txt)**
+
+---
+
+# **Dataset Creation & Training Instructions**
+
+---
+
+
